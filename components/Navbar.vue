@@ -10,6 +10,7 @@
         <NuxtLink :to="localePath({ name: 'index' })" class="text-white">{{$t("home")}}</NuxtLink>
         <NuxtLink :to="localePath({ name: 'about' })" class="text-white">{{$t("about")}}</NuxtLink>
         <NuxtLink :to="localePath({ name: 'Contact' })" class="text-white">{{$t("contact")}}</NuxtLink>
+        <NuxtLink :to="localePath({ name: 'products' })" class="text-white">Products</NuxtLink>
         <!-- <nuxt-link :to="localePath({ name: 'index' })">{{$t("home")}}</nuxt-link> -->
         <form class="text-white" >
           <select class="bg-blue-500" v-model="locale">
