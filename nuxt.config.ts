@@ -2,13 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    
-      '@nuxtjs/i18n' ,
-      '@nuxtjs/tailwindcss',
-     
-    
+    '@nuxtjs/i18n',
+    '@nuxtjs/tailwindcss',
   ],
- 
   i18n: {
     strategy: "prefix",
     defaultLocale: "hi",
@@ -29,7 +25,8 @@ export default defineNuxtConfig({
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      alwaysRedirect: true,
+      // alwaysRedirect: true,
+      redirectOn: 'root'
     },
   },
 })
